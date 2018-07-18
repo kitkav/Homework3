@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Payment form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+
+  <body class="container">
+    <form data-payment-form="form">
+      <header>
+        <h1 align="center">Payment Form</h1>
+      </header>
+      <section>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2>Contact  information:</h2>
+            <div class="form-group">
+              <label for="nameInput">Name:</label>
+              <input class="form-control" name="name" id="nameInput" autofocus>
+            </div>
+            <div class="form-group">
+              <label for="emailInput">Email:</label>
+              <input class="form-control" type="email" name="emailAddress" id="emailInput" value="" placeholder="dr@who.com">
+            </div>
+            <div class="form-group">
+              <label for="PasswordInput">Password:</label>
+              <input class="form-control" type="password" name="passwordIn" id="PasswordInput" value="" placeholder="*********">
+            </div>
+            <h2>Payment information:</h2>
+            <div class="form-group">
+              <label for="cardType">Card type:</label>
+              <input class="form-control" name="cardName" id="cardType" autofocus placeholder="Visa">
+            </div>
+            <div class="form-group">
+              <label for="cardInput">Card number:</label>
+              <input class="form-control" type="number" name="cardIn" id="cardInput" value="" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="ExpInput">Expiration date:[mm/yy]</label>
+              <input class="form-control" type="password" name="passwordIn" id="ExpInput" value="" placeholder="****">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg active">Submit The Payment</button>
+          </div>
+        </div>
+      </section>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="scripts/formhandler.js" charset="utf-8"></script>
+    <script src="scripts/payment.js" charset="utf-8"></script>
+  </body>
+
+</html>
